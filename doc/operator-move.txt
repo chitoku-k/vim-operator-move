@@ -1,0 +1,33 @@
+*operator-move.txt*	Operator to move cursor to the text objects
+
+Author: Chitoku <odango@chitoku.jp>
+License: MIT license
+
+=============================================================================
+CONTENTS					*operator-move-contents*
+
+Introduction			|operator-move-introduction|
+Interface			|operator-move-interface|
+  Key Mappings			  |operator-move-key-mappings|
+
+*operator-move* is a Vim plugin that provides an operator to move the cursor
+to the beginning or the end of the text objects.
+
+Requirements:
+- |operator-user|
+  https://github.com/kana/vim-operator-user
+
+=============================================================================
+INTERFACE					*operator-move-interface*
+
+------------------------------------------------------------------------------
+KEY MAPPINGS					*operator-move-key-mappings*
+
+<Plug>(operator-move-begin){motion}		*<Plug>(operator-move-begin)*
+			Move to the beginning of the {motion}.
+
+<Plug>(operator-move-end){motion}		*<Plug>(operator-move-end)*
+			Move to the end of the {motion}.
+
+=============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
